@@ -5,16 +5,16 @@
     # az login
 
 # create resource group
-    # az group create --name firstlinuxvmrg --location eastus
+    # az group create --name <namerg> --location eastus
 
 # create vm
-    # az vm create --resource-group firstlinuxvmrg --name myfirstvm --image UbuntuLTS --admin-username obiwankubernetes --generate-ssh-keys
+    # az vm create --resource-group <namerg> --name <namevm> --image UbuntuLTS --admin-username <admin_name> --generate-ssh-keys
 
 # Open port 80 for web traffic: By default, only SSH connections are opened when you create a Linux VM in Azure. Use az vm open-port to open TCP port 80 for use with the NGINX web server
-    # az vm open-port --port 80 --resource-group firstlinuxvmrg  --name myfirstvm
+    # az vm open-port --port 80 --resource-group <namerg>  --name <namevm>
 
 # connect to vm via ssh
-    # ssh obiwankubernetes@13.82.170.117
+    # ssh <name>@<ssh_port>
 
 # check version of linux vm running
     # cat /etc/issue.net
