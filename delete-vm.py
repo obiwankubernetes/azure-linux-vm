@@ -2,19 +2,19 @@
     # exit
 
 # view web server in action
-    # in browser enter public ip address: 13.82.170.117
+    # in browser enter public ip address: <publicipaddress>
 
 # stop vm
-    # az vm stop --resource-group firstlinuxvmrg --name myfirstvm
+    # az vm stop --resource-group <namerg> --name <namevm>
 
 # start vm
-    # az vm start --resource-group firstlinuxvmrg --name myfirstvm
+    # az vm start --resource-group <namerg> --name <namevm>
 
 # deallocat vm to stop billing
-    # az vm deallocate --name myfirstvm --no-wait --resource-group firstlinuxvmrg
+    # az vm deallocate --name <namevm> --no-wait --resource-group <namerg>
 
 # delete vm
-    # az vm delete --resource-group firstlinuxvmrg --name myfirstvm --yes
+    # az vm delete --resource-group <namerg> --name <namevm> --yes
 
 # delete resource group
-    # az group delete --name firstlinuxvmrg --no-wait --yes
+    # az group delete --name <namerg> --no-wait --yes
